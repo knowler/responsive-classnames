@@ -11,6 +11,7 @@
   "main": "dist/responsive-classnames.js",
   "module": "dist/responsive-classnames.module.js",
   "unpkg": "dist/responsive-classnames.umd.js",
+  "files": ["dist", "src"],
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
@@ -33,9 +34,7 @@
     "is-plain-object": "^3.0.0"
   },
   "jest": {
-    "testMatch": [
-      "**/test/**/*.js"
-    ]
+    "testMatch": ["**/test/**/*.js"]
   },
   "husky": {
     "hooks": {
@@ -43,8 +42,6 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write"
-    ]
+    "*.js": ["prettier --write"]
   }
 }
