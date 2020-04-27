@@ -15,6 +15,7 @@
     "build": "microbundle",
     "dev": "microbundle watch",
     "test": "jest test/*",
+    "preversion": "yarn build",
     "publish:npm": "np"
   },
   "devDependencies": {
