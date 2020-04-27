@@ -11,7 +11,7 @@
   "module": "responsive-classnames.js",
   "scripts": {
     "test": "jest test/*",
-    "publish": "np"
+    "publish:npm": "np"
   },
   "devDependencies": {
     "husky": "^4.2.5",
@@ -25,9 +25,7 @@
     "lodash.isplainobject": "^4.0.6"
   },
   "jest": {
-    "testMatch": [
-      "**/test/**/*.js"
-    ]
+    "testMatch": ["**/test/**/*.js"]
   },
   "husky": {
     "hooks": {
@@ -35,8 +33,6 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write"
-    ]
+    "*.js": ["prettier --write"]
   }
 }
