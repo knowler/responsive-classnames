@@ -67,7 +67,7 @@ const Stack = ({as: AsElement = 'div', space, ...props}) => (
 The following are some technical limitations of this package. I
 plan to address these in the future.
 
-## Only one expression allowed in template
+### Only one expression allowed in template
 
 Currently, the tagged template only takes a single expression
 (e.g. `space-y-${space}`)
