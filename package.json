@@ -1,0 +1,42 @@
+{
+  "name": "responsive-classnames",
+  "version": "0.0.0",
+  "author": "Nathan Knowler <nathan@knowler.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knowler/responsive-classnames.git"
+  },
+  "main": "index.js",
+  "module": "responsive-classnames.js",
+  "scripts": {
+    "test": "jest test/*",
+    "publish": "np"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "jest": "^25.4.0",
+    "lint-staged": "^10.1.7",
+    "np": "^6.2.2",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "lodash.isplainobject": "^4.0.6"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/**/*.js"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ]
+  }
+}
