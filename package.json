@@ -29,12 +29,10 @@
     "prettier": "^2.0.5"
   },
   "dependencies": {
-    "lodash.isplainobject": "^4.0.6"
+    "is-plain-object": "^3.0.0"
   },
   "jest": {
-    "testMatch": [
-      "**/test/**/*.js"
-    ]
+    "testMatch": ["**/test/**/*.js"]
   },
   "husky": {
     "hooks": {
@@ -42,8 +40,6 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write"
-    ]
+    "*.js": ["prettier --write"]
   }
 }

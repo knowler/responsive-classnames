@@ -1,4 +1,4 @@
-import isPlainObject from 'lodash.isplainobject';
+import isPlainObject from 'is-plain-object';
 
 export const createResponsiveClassNames = breakpoints => (
   classNameFragments,
