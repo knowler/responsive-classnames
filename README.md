@@ -3,6 +3,8 @@
 Use responsive props inspired by [Styled System] for components
 that using your [Tailwind CSS] class names.
 
+[Demo on Codesandbox](https://codesandbox.io/s/responsive-classnames-demo-rl8wt)
+
 ## Install
 
 Use your choice of NPM client to install the package:
