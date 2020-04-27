@@ -38,9 +38,11 @@ numeric value, an array of numeric values, or an object with
 keys corresponding to your breakpoints.
 
 ```jsx
+import cx from 'classnames';
+
 const Stack = ({as: AsElement = 'div', space, ...props}) => (
   <AsElement
-    className={rcx`space-y-${space}`} 
+    className={cx('flex flex-col', rcx`space-y-${space}`)} 
     {...props} 
   />
 );
@@ -84,7 +86,7 @@ so far.
 ## Disclaimer
 
 `responsive-classnames` is not meant to replace packages like
-`classnames`, but to be used in tandem with them.
+[`classnames`], but to be used in tandem with them.
 
 ## Contributing
 
@@ -93,4 +95,4 @@ it’s something small.
 
 [Styled System]: https://github.com/styled-system/styled-system
 [Tailwind CSS]: https://github.com/tailwindcss/tailwindcss
-[classnames]: https://github.com/JedWatson/classnames
+[`classnames`]: https://github.com/JedWatson/classnames
