@@ -1,4 +1,4 @@
-const {createResponsiveClassNames} = require('../index');
+import {createResponsiveClassNames} from '../src/responsive-classnames';
 
 const breakpoints = ['sm', 'md', 'lg'];
 

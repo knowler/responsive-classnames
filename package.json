@@ -7,27 +7,32 @@
     "type": "git",
     "url": "https://github.com/knowler/responsive-classnames.git"
   },
-  "main": "index.js",
-  "module": "responsive-classnames.js",
+  "source": "src/responsive-classnames.js",
+  "main": "dist/responsive-classnames.js",
+  "module": "dist/responsive-classnames.module.js",
+  "unpkg": "dist/responsive-classnames.umd.js",
   "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
     "test": "jest test/*",
     "publish:npm": "np"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.4.0",
     "husky": "^4.2.5",
     "jest": "^25.4.0",
     "lint-staged": "^10.1.7",
+    "microbundle": "^0.11.0",
     "np": "^6.2.2",
     "prettier": "^2.0.5"
   },
   "dependencies": {
-    "esm": "^3.2.25",
     "lodash.isplainobject": "^4.0.6"
   },
   "jest": {
-    "testMatch": [
-      "**/test/**/*.js"
-    ]
+    "testMatch": ["**/test/**/*.js"]
   },
   "husky": {
     "hooks": {
@@ -35,8 +40,6 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write"
-    ]
+    "*.js": ["prettier --write"]
   }
 }
